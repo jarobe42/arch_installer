@@ -5,7 +5,7 @@ name=$(cat /tmp/user_name)
 apps_path="/tmp/apps.csv"
 
 # Don't forget to replace "Phantas0s" by the username of your Github account
-curl https://raw.githubusercontent.com/Phantas0s\
+curl https://raw.githubusercontent.com/jarobe42\
 /arch_installer/master/apps.csv > $apps_path
 
 dialog --title "Welcome!" \
@@ -19,14 +19,17 @@ apps=("essential" "Essentials" on
       "tmux" "Tmux" on
       "notifier" "Notification tools" on
       "git" "Git & git tools" on
+      "passwords" "Password Manager stuff" on
       "i3" "i3 wm" on
       "zsh" "The Z-Shell (zsh)" on
       "neovim" "Neovim" on
       "urxvt" "URxvt" on
+      "code" "Code" on
       "firefox" "Firefox (browser)" off
       "js" "JavaScript tooling" off
       "qutebrowser" "Qutebrowser (browser)" off
-      "lynx" "Lynx (browser)" off)
+      "lynx" "Lynx (browser)" off
+      "fun" "Stuff for fun" off)
 
 dialog --checklist \
 "You can now choose what group of application you want to install. \n\n\
